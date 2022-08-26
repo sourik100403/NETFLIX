@@ -1,0 +1,121 @@
+.mainContainer {
+    width: 100%;
+    height: calc(70vh - 5rem);
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    /* border: 10px solid rebeccapurple; */
+}
+
+.mainImage img {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    z-index: -100;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.mainText {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    left: 5%;
+    color: white;
+    flex-direction: column;
+    line-height: 55px;
+    z-index: -1;
+    /* box-shadow: inset 5px 5px 5px rgb(255 255 255 / 50%); */
+    background: rgba(255,255,255,0.1);
+    border-left:1px solid rgba(255,255,255,0.3);
+    border-top:1px solid rgba(255,255,255,0.3);
+}
+
+
+/* 
+.mainText::before {
+    content: "";
+    background: black;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    opacity: .6;
+} */
+
+h1 {
+
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+.movieName{
+    text-align: start;
+}
+
+
+h2 {
+    font-weight: 300;
+}
+
+
+
+p {
+    font-size: 18px;
+}
+
+
+.container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+.hrline {
+    width: 100%;
+    background: #222;
+    height: 8px;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .mainText{
+        display: none;
+    }
+    .mainText h1 {
+        width: 70%;
+        font-size: 2rem;
+        line-height: initial;
+    }
+
+    .mainText p {
+        width: 80%;
+        line-height: initial;
+
+    }
+    .search{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .search button {
+        font-size: 18px;
+    }
+}
+
+
+
+
+button{
+    cursor: pointer;
+}
+.buttons button{
+    background-color: #333;
+}

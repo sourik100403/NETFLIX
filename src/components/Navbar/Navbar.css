@@ -1,0 +1,123 @@
+:root {
+
+    --main-color: #e50914;
+}
+
+.nav,
+.nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(206, 128, 128); */
+    padding: 0.5rem 3%;
+    height: 5rem;
+
+}
+
+
+
+.nav img,
+.nav2 img {
+    width: 150px;
+}
+
+button {
+    padding: 7px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Poppins";
+    margin: 0 10px;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.signinButton {
+    padding: 6px 17px;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+
+
+.search {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(197, 30, 30);
+}
+
+.search input {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+
+.search button {
+    margin: 0;
+    padding: 11px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+    width: max-content;
+    height: 65px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* ******* CSS FOR NAVBAR2 *************** */
+
+
+.nav2 {
+    background-color: rgba(0, 0, 0);
+}
+
+.leftNav2 {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex: 1;
+}
+
+.leftNav2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.leftNav2 ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.leftNav2 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media (max-width:800px) {
+    .leftNav2 ul {
+
+        display: none;
+    }
+    .welcome{
+        display: none;
+    }
+}
